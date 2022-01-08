@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+    <script>
+        async function loadText() {
+            let response1 = await fetch("public/A.txt");
+            let response2 = await fetch("public/B.txt");
+
+            let data1 = await response1.text();
+            let data2 = await response2.text();
+
+            let text = document.querySelector(".text");
+            let data1Splited = data1.split("\r\n");
+            let data2Splited = data2.split("\r\n");
+
+            for (let i = 0; i < data1Splited.length; i++) {
+                text.innerHTML += data1Splited[i] + " " + data2Splited[i] + "<br>";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Aufgabe 1</h1>
+    <button onclick="loadText()">Fetch</button>
+    <div class="text"></div>
+</body>
+
+</html>
