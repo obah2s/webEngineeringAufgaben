@@ -1,0 +1,33 @@
+- HTML steht für "Hypertext Markup Language" und ist eine Auszeichnungssprache. 
+
+- <ol>
+  <li>
+  	<ol>
+    	<li> </li>
+        <li> </li>
+        <li> </li>
+    </ol>
+  </li>
+  <li>
+  	<ol>
+    	<li> </li>
+        <li> </li>
+        <li> </li>
+    </ol>
+  </li>
+  <li>
+  	<ol>
+    	<li> </li>
+        <li> </li>
+        <li> </li>
+    </ol>
+  </li>
+</ol>  
+
+- Eine HTML Tabelle (<table> </table>) ist aus Zeilen gebaut (<tr> </tr>). In jeder Zeile gibt man die Informationen der Spalte ein.  (<th> Info</th>). 
+
+- Dateinamen endet mit .html und Index.html ist für die Einstiegsseite.
+
+- Mit einer Liste kann man ein Menü bauen und die verschiedenen Menüpunkte mit den jeweiligen HTML-Dateien verknüpfen.
+
+- sec für den Pfad und alt zur Erklärung des Bildes. Das zweite ist wichtig für Sehbehinderte und Suchmaschinen.  

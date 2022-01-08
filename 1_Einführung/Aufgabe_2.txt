@@ -1,0 +1,7 @@
+- Der Status 200 steht für OK und bedeutet: Alles erfolgreich.
+
+- Der Status Code 301 bedeutet, dass der Webserver den Client auf eine andere Webseite weiter geleitet hat, nachdem er eine Seite aufgerufen hat. 
+
+- Der Status Code 400 meldet einen Fehler. Das heisst, der Server konnte nicht die Anfrage bearbeiten. Dagegen kann man den Seite neu laden, da in den meisten Fällen ist es ein Netz Problem.
+
+- Der Status Code 403 bedeutet, dass der Server zwar die Anfrage verstanden hat, jedoch akzeptiert sie nicht. Dagegen kann man den URL überprüfen, die Seite neu laden, oder auch den Cache leeren. 
