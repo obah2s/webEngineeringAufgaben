@@ -1,0 +1,2 @@
+In TypeScript gibt es keine statische Klassen. 
+Während die anderen objekt-orientierten Sprachen entweder in byte-code oder Machinen-code kompiliert werden, wird Typescript in Vanilla Javascript Kompiliert. 

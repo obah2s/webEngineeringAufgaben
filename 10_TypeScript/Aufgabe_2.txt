@@ -1,0 +1,19 @@
+- Dieser Javascript-Code kompiliert fehlerfrei. Allerdings existiert nicht die Syntax (var x = y = 1;) in Typescript.
+
+- 
+const add = (x: any, y: any) : any => x +y;
+const equals = (x: any, y: any) : any => x === y;
+console.log( add(1,2) );
+console.log( add(true, true ) );
+console.log( add(true, false ) );
+var x, y = x = 1;
+console.log( add(equals(x,y), equals(y,x)) );
+
+
+- Es würde (var x = y = 1;) als Fehler gemeldet. 
+Allerdings funktioniert dies: (var x, y = x = 1;)
+
+
+- 
+const add = (x: number, y: number) : number => x +y;
+add(true, true) // Das wird nicht kompilieren da die Function add ein Typ number erwartet aber bekommt ein Typ boolean.
