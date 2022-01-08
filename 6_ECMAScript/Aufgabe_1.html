@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const submit = document.querySelector("#submit");
+
+        submit.addEventListener("click", () => {
+            const submittedText = document.querySelector("#myInput").value;
+            console.log(submittedText);
+
+            // Anzahl an Klammern
+            let acc = 0, cro = 0, par = 0;
+
+            // Überprüfung 
+            for (let i = 0; i < submittedText.length; i++) {
+                switch (submittedText[i]) {
+                    case '{':
+                        acc++;
+                        break;
+                    case '}':
+                        acc--;
+                        break;
+                    case '[':
+                        cro++;
+                        break;
+                    case ']':
+                        cro--;
+                        break;
+                    case '(':
+                        par++;
+                        break;
+                    case ')':
+                        par--;
+                        break;
+                    default:
+                        continue;
+                }
+            }
+
+            // Ausgabe
+            if (acc === 0 && cro === 0 && par === 0) {
+                document.querySelector("#myInput").style.backgroundColor = 'green';
+                console.log("ok");
+            } else {
+                console.assert(false, "Die Klammerung ist nicht vollständig");
+                document.querySelector("#myInput").style.backgroundColor = 'red';
+                console.log("nicht ok");
+            }
+        })
+
+    </script>
+</head>
+
+<body>
+    <h1>Korrekte Schaltung von Klammerplaaren</h1>
+    <label for="text">Geben Sie eine Zeichenkette ein</label>
+    <input type="text" id="myInput">
+    <input type="submit" id="submit" value="Submit">
+
+</body>
+
+</html>
