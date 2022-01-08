@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+ <head>
+   <script src="https://unpkg.com/vue"></script>
+   <style>
+   textarea{
+     width: 300px;
+     height: 100px;
+   }
+   h1{
+    font-size:36px;
+	font-weight:bold;
+	color:#F88E37;
+   }
+   span{
+    font-size:16px;
+	font-weight:bold;
+	color:#5a37f8;
+   }
+   </style>
+ </head>
+ <body>
+ 
+   <div id='eingabe'>
+    <h1> Word, Space, charachters Counter </h1>
+     <textarea v-model='message' @keyup='charCount()' ></textarea>
+     <br/>
+     <span>{{ character }} characters</span>
+     <span>{{ space}} spaces</span>
+     <span>{{word}} words</span>
+   </div>
+   <script src="component.js"></script>
+ </body>
+</html>
