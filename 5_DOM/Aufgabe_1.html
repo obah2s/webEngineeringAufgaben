@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM Performance</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <script>
+        const test1 = document.querySelector("#test1");
+        const test2 = document.querySelector("#test2");
+        const test3 = document.querySelector("#test3");
+        const test4 = document.querySelector("#test4");
+
+
+        test1.addEventListener("click", function () {
+            const t0 = performance.now();
+            test1.innerHTML = 'Calculating the performance...';
+            const t1 = performance.now();
+            document.querySelector("#innerH").innerHTML = t1 - t1;
+        })
+
+
+        test2.addEventListener("click", function () {
+            const t0 = performance.now();
+            test2.innerText = 'Calculating the performance...';
+            const t1 = performance.now();
+            document.querySelector("#innerT").innerHTML = t1 - t0;
+        })
+
+
+        test3.addEventListener("click", function () {
+            const t0 = performance.now();
+            test3.textContent = "Calculating the performance...";
+            const t1 = performance.now();
+            document.querySelector("#testC").innerHTML = t1 - t0;
+        })
+
+
+        const t4_0 = performance.now();
+        test4.addEventListener("click", function () {
+            const t0 = performance.now();
+            test4.outerHTML = 'Calculating the performance...';
+            const t1 = performance.now();
+            document.querySelector("#testC").innerHTML = t1 - t0;
+        })
+
+    </script>
+</head>
+
+<body>
+    <h1>Performance testing</h1>
+    <h3>innerHTML</h3>
+    <button id='test1'>Click to test the performance</button>
+    <h3>innerText</h3>
+    <button id='test2'>Click to test the performance</button>
+    <h3>textContent</h3>
+    <button id='test3'>Click to test the performance</button>
+    <h3>outerHTML</h3>
+    <button id='test4'>Click to test the performance</button>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Elemente</th>
+            <th>Performanzmessungen</th>
+        </tr>
+        <tr>
+            <td>innerHTML</td>
+            <td id="innerH">0</td>
+        </tr>
+        <tr>
+            <td>innerText</td>
+            <td id="innerT">0</td>
+        </tr>
+        <tr>
+            <td>textContent</td>
+            <td id="testC">0</td>
+        </tr>
+        <tr>
+            <td>outerHTML</td>
+            <td id="outerH">0</td>
+        </tr>
+    </table>
+</body>
+
+</html>
