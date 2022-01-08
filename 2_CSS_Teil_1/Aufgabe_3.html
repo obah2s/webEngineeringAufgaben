@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <!--<link rel="stylesheet" href="stylesheet.css">-->
+</head>
+
+<body>
+    <style type="text/css">
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        body {
+            background-color: #b2d6d1;
+        }
+
+        #envolop {
+            padding: 40px;
+            margin: 50px;
+            background-color: rgb(235, 244, 243);
+        }
+
+        p {
+            font-family: "Gill Sans", sans-serif;
+            text-align: center;
+        }
+
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 40%;
+            padding: 5px;
+        }
+
+        .rightTab {
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+            vertical-align: middle;
+        }
+
+        #check {
+            display: block;
+            text-align: right;
+            padding-right: 30%;
+        }
+
+        #labels {
+            display: inline-block;
+            text-align: left;
+            width: 40%;
+            padding: 5px;
+        }
+    </style>
+    <h1> Survey Form</h1>
+    <div id="envolop">
+        <p>let us know how we can improve freeCodeCamp</p>
+        <form>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Email:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+        </form>
+        <form>
+            <label for="role">which option best describes your current role:</label>
+            <select id="role">
+                <option value="student">student</option>
+                <option value="expert">expert</option>
+                <option value="teacher">teacher</option>
+            </select>
+        </form>
+        <form>
+            <label for="option">which option best describes your current role:</label>
+            <div id="check">
+                <input type="checkbox" id="def" name="def" value="def">
+                <label for="def" id="labels"> Definitely.</label><br>
+                <input type="checkbox" id="maybe" name="maybe" value="maybe">
+                <label for="maybe" id="labels">Maybe.</label><br>
+                <input type="checkbox" id="not sure" name="vehicle3" value="not sure">
+                <label for="not sure" id="labels"> Not sure.</label>
+            </div>
+        </form>
+        <label for="advantages">what do you like the most in FCC?</label>
+        <select id="advantages">
+            <option value="use">ease of use</option>
+            <option value="choices"> lot of choices</option>
+            <option value="practice"> projects to practice</option>
+        </select>
+        <form>
+            <div id="check">
+                <label>things that should be improved in the future:</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1" id="labels"> Front-end Projects</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2" id="labels"> Back-end Projects</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3" id="labels">Data visualisation</label>
+            </div>
+        </form>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
