@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Aufgabe3-3</title>
+    <style type="text/css">
+        body {
+            display: grid;
+            grid-template-areas:
+                'header header'
+                'div-h2 div-h2'
+                'div-image div-texte'
+                'footer footer'
+        }
+
+        header {
+            grid-area: header;
+            background-color: #363433;
+            color: white;
+            text-align: center;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .div-h2 {
+            grid-area: div-h2;
+            text-align: center;
+            background-color: #c7c7c7;
+        }
+
+        .div-image {
+            grid-area: div-image;
+            background-color: #c7c7c7;
+        }
+
+        img {
+            border: 1px solid;
+            border-radius: 5px;
+            width: 340px;
+            margin-left: 35px;
+            margin-bottom: 10px;
+        }
+
+        .div-texte {
+            grid-area: div-texte;
+            text-align: center;
+            background-color: #c7c7c7;
+            padding-top: 15%;
+            padding-bottom: 15%;
+        }
+
+        .div-texte p {
+            padding-bottom: 2%;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #25293d;
+            color: white;
+            text-align: center;
+        }
+
+        footer button {
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: orange;
+            border: 0px solid;
+            border-radius: 5px;
+            color: white;
+            padding: 2px 50px 2px 50px;
+        }
+
+        @media screen and (max-width: 400px) {
+            body {
+                display: grid;
+                grid-template-areas:
+                    'header'
+                    'div-h2 '
+                    'div-image'
+                    'div-texte'
+                    'footer'
+            }
+
+            header {}
+
+            li {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: inherit;
+                text-align: left;
+
+            }
+
+            img {
+                width: 80%;
+                margin-right: 35px;
+            }
+
+            footer button {
+                margin-bottom: 10px;
+            }
+
+            footer p {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>The book series</li>
+            <li>Testimonials</li>
+            <li>The Author</li>
+            <li>Free resources</li>
+        </ul>
+    </header>
+    <div class="div-h2">
+        <h2>You dont know Javascript</h2>
+    </div>
+    <div class="div-image"><img src="https://kaul.inf.h-brs.de/we/assets/img/landing-img.png"></div>
+    <div class="div-texte">
+        <p>Don't just drift through javascript.</p>
+        <p>Understand how javascript works</p>
+        <p>Start your journey through the bumpy side of javascript</p>
+        <button name="order" type="button">ORDER YOUR COPY NOW</button>
+
+    </div>
+    <footer>
+        <p>The first ebook in the book series is absolutely free.</p>
+        <button name="order" type="button">FIND OUT MORE ABOUT THIS OFFER</button>
+    </footer>
+
+</body>
+
+</html>
