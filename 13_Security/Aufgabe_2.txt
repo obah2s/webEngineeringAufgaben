@@ -1,0 +1,9 @@
+SELECT department FROM employees WHERE first_name = 'Bob' AND last_name = 'Franco';
+update employees set department = 'Sales' where first_name='Tobi' and last_name='Barnett';
+ALTER TABLE employees ADD phone varchar(20);
+GRANT ALL ON grant_rights TO unauthorized_user;
+SELECT * FROM user_data WHERE first_name = 'John' and last_name = 'Smith' or '1' = '1';
+SELECT * From user_data WHERE Login_Count = 1 and userid= 1 OR '1' = '1';
+SELECT * FROM employees WHERE last_name = 'Smith' AND auth_tan = '' OR '1' = 1';
+SELECT * FROM employees WHERE last_name = 'Smith' AND auth_tan = ''; UPDATE employees SET salary = 100000 WHERE auth_tan = '3SL99A';
+SELECT * FROM access_log WHERE action LIKE % '; DROP TABLE access_log --%;
