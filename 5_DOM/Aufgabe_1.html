@@ -22,6 +22,43 @@
             background-color: #dddddd;
         }
     </style>
+    
+</head>
+
+<body>
+    <h1>Performance testing</h1>
+    <h3>innerHTML</h3>
+    <button id='test1'>Click to test the performance</button>
+    <h3>innerText</h3>
+    <button id='test2'>Click to test the performance</button>
+    <h3>textContent</h3>
+    <button id='test3'>Click to test the performance</button>
+    <h3>outerHTML</h3>
+    <button id='test4'>Click to test the performance</button>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Elemente</th>
+            <th>Performanzmessungen</th>
+        </tr>
+        <tr>
+            <td>innerHTML</td>
+            <td id="innerH">0</td>
+        </tr>
+        <tr>
+            <td>innerText</td>
+            <td id="innerT">0</td>
+        </tr>
+        <tr>
+            <td>textContent</td>
+            <td id="testC">0</td>
+        </tr>
+        <tr>
+            <td>outerHTML</td>
+            <td id="outerH">0</td>
+        </tr>
+    </table>
     <script>
         const test1 = document.querySelector("#test1");
         const test2 = document.querySelector("#test2");
@@ -62,42 +99,6 @@
         })
 
     </script>
-</head>
-
-<body>
-    <h1>Performance testing</h1>
-    <h3>innerHTML</h3>
-    <button id='test1'>Click to test the performance</button>
-    <h3>innerText</h3>
-    <button id='test2'>Click to test the performance</button>
-    <h3>textContent</h3>
-    <button id='test3'>Click to test the performance</button>
-    <h3>outerHTML</h3>
-    <button id='test4'>Click to test the performance</button>
-    <br>
-    <br>
-    <table>
-        <tr>
-            <th>Elemente</th>
-            <th>Performanzmessungen</th>
-        </tr>
-        <tr>
-            <td>innerHTML</td>
-            <td id="innerH">0</td>
-        </tr>
-        <tr>
-            <td>innerText</td>
-            <td id="innerT">0</td>
-        </tr>
-        <tr>
-            <td>textContent</td>
-            <td id="testC">0</td>
-        </tr>
-        <tr>
-            <td>outerHTML</td>
-            <td id="outerH">0</td>
-        </tr>
-    </table>
 </body>
 
 </html>
